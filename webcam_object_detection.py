@@ -3,7 +3,7 @@ import cv2
 from ultralytics import YOLO
 import time
 
-# Load pre-trained YOLOv8 model (tiny version for speed)
+# Load pre-trained YOLOv8 model
 model = YOLO("yolov8s.pt")
 
 # Initialize webcam
@@ -56,3 +56,4 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 print("Webcam closed.")
+
